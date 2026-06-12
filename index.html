@@ -923,6 +923,120 @@ body {
 }
 .diff-bullets li strong { color: #1a1a18; font-weight: 700; }
 
+
+/* ═══ BENCHMARK GERAL + VISÃO GERAL EXTRA ═══ */
+.bm-section { margin-bottom: 52px; }
+.bm-section-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: #E8192C; margin-bottom: 10px; }
+.bm-section-title { font-size: clamp(18px,2.4vw,24px); font-weight: 700; color: #1a1a18; line-height: 1.18; margin-bottom: 12px; }
+.bm-section-lead { font-size: clamp(13px,1.3vw,14.5px); color: #44443f; line-height: 1.72; margin-bottom: 26px; max-width: 880px; }
+/* clusters */
+.bm-clusters { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 18px; }
+.bm-cluster { border: 1px solid; border-radius: 14px; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
+.bm-cluster-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; }
+.bm-cluster-letter { width: 34px; height: 34px; flex-shrink: 0; border-radius: 9px; color: #fff; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+.bm-cluster-name { font-size: 15px; font-weight: 700; line-height: 1.15; }
+.bm-cluster-tag { font-size: 11.5px; color: #5f5e5a; margin-top: 2px; }
+.bm-cluster-body { padding: 16px 18px 20px; }
+.bm-coin { display: flex; flex-direction: column; gap: 2px; margin-bottom: 12px; }
+.bm-coin-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; color: #888780; font-weight: 600; }
+.bm-coin-val { font-size: 12.5px; font-weight: 600; line-height: 1.3; }
+.bm-cluster-desc { font-size: 12.5px; color: #44443f; line-height: 1.6; margin-bottom: 16px; }
+.bm-group { margin-bottom: 14px; }
+.bm-group-label { font-size: 10.5px; font-weight: 600; color: #5f5e5a; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 7px; }
+.bm-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.bm-badge { font-size: 11.5px; font-weight: 600; padding: 4px 10px; border-radius: 7px; border: 1px solid; line-height: 1.3; }
+/* swot cruzada */
+.bm-swot-grid { display: grid; grid-template-columns: 92px 1fr 1fr 1fr; gap: 8px; }
+.bm-swot-corner { }
+.bm-swot-colhead { border: 1px solid; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 1px; }
+.bm-swot-colname { font-size: 14px; font-weight: 700; }
+.bm-swot-colsub { font-size: 11px; color: #5f5e5a; }
+.bm-swot-rowlabel { display: flex; align-items: center; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; border-radius: 8px; text-align: left; }
+.bm-swot-cell { background: #FAFAF8; border: 0.5px solid #ECEAE2; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 9px; }
+.bm-swot-item { font-size: 11.8px; line-height: 1.45; color: #2c2c2a; padding-left: 16px; position: relative; }
+.bm-swot-dot { position: absolute; left: 0; top: 6px; width: 6px; height: 6px; border-radius: 50%; }
+.bm-tone-pos .bm-swot-dot, .bm-swot-item.bm-tone-pos .bm-swot-dot { background: #1D9E75; }
+.bm-tone-neg .bm-swot-dot, .bm-swot-item.bm-tone-neg .bm-swot-dot { background: #E8192C; }
+.bm-swot-rowlabel.bm-tone-pos { background: #E1F5EE; color: #0F6E56; }
+.bm-swot-rowlabel.bm-tone-neg { background: #FCEBEB; color: #A32D2D; }
+/* trends */
+.bm-trends { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 16px; }
+.bm-trend { background: #fff; border: 0.5px solid #ECEAE2; border-top: 3px solid; border-radius: 12px; padding: 18px 20px; }
+.bm-trend-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.bm-trend-letter { width: 28px; height: 28px; flex-shrink: 0; border-radius: 8px; color: #fff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.bm-trend-title { font-size: 14.5px; font-weight: 700; color: #1a1a18; line-height: 1.2; }
+.bm-trend-problem { font-size: 11.5px; color: #5f5e5a; margin-bottom: 10px; display: flex; flex-direction: column; gap: 2px; }
+.bm-trend-problem-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: #BA7517; font-weight: 700; }
+.bm-trend-text { font-size: 12.5px; color: #44443f; line-height: 1.6; }
+/* conclusao */
+.bm-concl-intro { font-size: clamp(13px,1.35vw,14.5px); color: #1a1a18; line-height: 1.75; margin-bottom: 24px; max-width: 880px; }
+.bm-moves { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+.bm-move { display: flex; gap: 16px; background: #fff; border: 0.5px solid #ECEAE2; border-left: 4px solid; border-radius: 0 12px 12px 0; padding: 18px 22px; }
+.bm-move-n { font-size: 30px; font-weight: 700; line-height: 1; flex-shrink: 0; }
+.bm-move-title { font-size: 15px; font-weight: 700; color: #1a1a18; margin-bottom: 6px; }
+.bm-move-text { font-size: 12.8px; color: #44443f; line-height: 1.65; }
+.bm-synthesis { background: #EEEDFE; border: 0.5px solid #AFA9EC; border-radius: 12px; padding: 18px 22px; font-size: 13.5px; line-height: 1.7; color: #26215C; }
+.bm-synthesis-label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; color: #534AB7; font-weight: 700; margin-bottom: 8px; }
+/* ── overview extra ── */
+.ov-x-section { margin-bottom: 48px; }
+.ov-x-title { font-size: clamp(17px,2.2vw,22px); font-weight: 700; color: #1a1a18; line-height: 1.18; margin-bottom: 12px; }
+.ov-x-lead { font-size: clamp(13px,1.3vw,14.5px); color: #44443f; line-height: 1.72; margin-bottom: 24px; max-width: 880px; }
+.ov-x-close { font-size: 13px; color: #44443f; line-height: 1.7; margin-top: 20px; max-width: 880px; font-style: italic; }
+.ov-stats3 { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 16px; }
+.ov-stat-card { background: #fff; border: 0.5px solid #ECEAE2; border-top: 3px solid; border-radius: 12px; padding: 20px; }
+.ov-stat-n { font-size: 34px; font-weight: 700; line-height: 1; margin-bottom: 12px; }
+.ov-stat-l { font-size: 13px; color: #2c2c2a; line-height: 1.55; margin-bottom: 12px; }
+.ov-stat-src { font-size: 10.5px; color: #888780; border-top: 0.5px solid #ECEAE2; padding-top: 8px; }
+/* funnel */
+.ov-funnel { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: 30px; }
+.ov-funnel-tier { color: #fff; border-radius: 14px; padding: 20px 26px; text-align: center; width: 100%; max-width: 760px; }
+.ov-funnel-tier:nth-child(1) { max-width: 760px; }
+.ov-funnel-tier:nth-child(3) { max-width: 600px; }
+.ov-funnel-tier:nth-child(5) { max-width: 440px; }
+.ov-funnel-tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; opacity: 0.85; }
+.ov-funnel-name { font-size: 13px; font-weight: 600; opacity: 0.95; margin-bottom: 8px; }
+.ov-funnel-big { font-size: 32px; font-weight: 700; line-height: 1; }
+.ov-funnel-unit { font-size: 12.5px; opacity: 0.92; margin-top: 3px; }
+.ov-funnel-sub { font-size: 12px; opacity: 0.85; margin-top: 8px; font-weight: 600; }
+.ov-funnel-note { font-size: 11.5px; opacity: 0.85; margin-top: 8px; line-height: 1.45; max-width: 520px; margin-left: auto; margin-right: auto; }
+.ov-funnel-arrow { color: #B4B2A9; font-size: 16px; line-height: 1; padding: 6px 0; }
+.ov-sub-label { font-size: 13px; font-weight: 700; color: #1a1a18; margin-bottom: 16px; text-align: center; }
+.ov-submarkets { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 16px; }
+.ov-submarket { background: #fff; border: 0.5px solid #ECEAE2; border-top: 3px solid; border-radius: 12px; padding: 18px 20px; }
+.ov-submarket-top { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+.ov-submarket-pct { font-size: 28px; font-weight: 700; line-height: 1; }
+.ov-submarket-n { font-size: 12px; color: #5f5e5a; font-weight: 600; }
+.ov-submarket-name { font-size: 15px; font-weight: 700; color: #1a1a18; margin-bottom: 8px; }
+.ov-submarket-how { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; padding: 4px 10px; border-radius: 6px; margin-bottom: 12px; }
+.ov-submarket-desc { font-size: 12.5px; color: #44443f; line-height: 1.6; margin-bottom: 12px; }
+.ov-submarket-players { font-size: 11.5px; color: #5f5e5a; font-weight: 600; padding: 8px 0; border-top: 0.5px solid #ECEAE2; }
+.ov-submarket-challenge { font-size: 11.5px; color: #A32D2D; display: flex; flex-direction: column; gap: 2px; margin-top: 6px; }
+.ov-submarket-challenge span { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: #888780; font-weight: 700; }
+/* profiles */
+.ov-profiles { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 18px; }
+.ov-profile { background: #fff; border: 0.5px solid #ECEAE2; border-top: 3px solid; border-radius: 12px; padding: 20px; position: relative; }
+.ov-profile-n { width: 32px; height: 32px; border-radius: 9px; color: #fff; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+.ov-profile-name { font-size: 16px; font-weight: 700; color: #1a1a18; line-height: 1.15; }
+.ov-profile-persona { font-size: 11.5px; font-weight: 600; margin-top: 2px; margin-bottom: 12px; }
+.ov-profile-scenario { font-size: 12.5px; color: #44443f; line-height: 1.6; margin-bottom: 12px; }
+.ov-profile-driver { background: #F1EFE8; border-radius: 8px; padding: 9px 12px; font-size: 12px; font-weight: 600; color: #2c2c2a; margin-bottom: 12px; display: flex; flex-direction: column; gap: 2px; }
+.ov-profile-driver span { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: #888780; font-weight: 700; }
+.ov-profile-buy { font-size: 12px; color: #44443f; line-height: 1.55; margin-bottom: 14px; }
+.ov-profile-fit-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; color: #888780; font-weight: 700; margin-bottom: 8px; }
+.ov-profile-fit { display: flex; flex-wrap: wrap; gap: 6px; }
+.ov-fit-badge { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 6px; border: 1px solid; line-height: 1.3; }
+/* pains */
+.ov-pains { display: flex; flex-direction: column; gap: 12px; }
+.ov-pain { display: flex; gap: 18px; background: #fff; border: 0.5px solid #ECEAE2; border-radius: 12px; padding: 18px 22px; align-items: flex-start; }
+.ov-pain-n { font-size: 26px; font-weight: 700; line-height: 1; flex-shrink: 0; min-width: 42px; }
+.ov-pain-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.ov-pain-text { font-size: 12.8px; color: #44443f; line-height: 1.65; }
+@media (max-width: 720px){
+  .bm-swot-grid { grid-template-columns: 1fr; }
+  .bm-swot-corner { display: none; }
+  .bm-swot-rowlabel { justify-content: center; }
+}
+
 </style>
 </head>
 <body>
@@ -950,7 +1064,8 @@ body {
   <div class="nav-tabs">
     <button class="ntab active" onclick="showPage(0,this)" data-i18n="tab_cover">Capa</button>
     <button class="ntab" onclick="showPage(1,this)" data-i18n="tab_overview">Visão geral</button>
-    <button class="ntab" onclick="showPage(2,this)" data-i18n="tab_company">Por empresa</button>
+    <button class="ntab" onclick="showPage(10,this);buildBenchmark()" data-i18n="tab_benchmark">Benchmark geral</button>
+        <button class="ntab" onclick="showPage(2,this)" data-i18n="tab_company">Por empresa</button>
     <button class="ntab" onclick="showPage(3,this)" data-i18n="tab_criteria">Critérios</button>
     <button class="ntab" onclick="showPage(4,this);buildCompFilters()" data-i18n="tab_comparative">Matriz de Pontos</button>
     <button class="ntab" onclick="showPage(5,this);buildCrit2()" data-i18n="tab_critical">Análise Comparativa</button>
@@ -1030,6 +1145,7 @@ body {
           <div class="box-source" data-i18n="mx_source">Fontes: CONDUSEF/SNEF, CNBV – Política Nacional de Inclusão Financeira, Estrategia Nacional de Educación Financiera 2025-2030, ENIF 2024, Report EdTech 2024 (Distrito)</div>
         </div>
       </div>
+    <div id="overview-extra-content"></div>
     <div class="overview-report-section">
       <div class="divider-page" style="margin-top:40px"></div>
       <p class="overview-report-text" data-i18n="report_text1">Diante desse cenário complexo, a Santillana, em parceria com a Obirô Design Educacional, realizou entre os meses de janeiro e abril de 2026 uma pesquisa profunda de benchmark e análise do mercado de solução para Educação Financeira.</p>
@@ -1041,6 +1157,17 @@ body {
       </a>
       <p class="overview-report-text" data-i18n="report_text3">A segunda parte está relatada nessa apresentação, resultado de um processo em que foram selecionadas 8 empresas latino-americanas de Educação Financeira, analisadas segundo critérios pedagógicos, comerciais e estruturais com o objetivo de escolher possíveis parceiros comerciais para a Santillana nessa área.</p>
     </div>
+    </div>
+  </div>
+
+  <!-- PAGE 10: BENCHMARK GERAL -->
+  <div class="page" id="page-10">
+    <div class="content-page">
+      <div class="page-eyebrow" data-i18n="bm_eyebrow">Benchmark de mercado &middot; Fase 1</div>
+      <div class="page-title" data-i18n="bm_title">Panorama competitivo da<br>educa&ccedil;&atilde;o financeira no Brasil</div>
+      <div class="page-subtitle" data-i18n="bm_subtitle">Mapa dos players, choque de modelos de neg&oacute;cio e horizontes de oportunidade no mercado K-12.</div>
+      <div class="divider-page"></div>
+      <div id="benchmark-content"></div>
     </div>
   </div>
 
@@ -1618,9 +1745,555 @@ function setLang(lang) {
     var key = el.getAttribute('data-i18n-svg');
     if(svgI18n[key] && svgI18n[key][lang]) el.textContent = svgI18n[key][lang];
   });
+  if(document.getElementById('benchmark-content')) buildBenchmark();
+  if(document.getElementById('overview-extra-content')) buildOverviewExtra();
 }
 
 buildEmpresaGrid();
+
+
+// ╔════════════════════════════════════════════╗
+// ║  BENCHMARK GERAL + VISÃO GERAL EXTRA módulo ║
+// ╚════════════════════════════════════════════╝
+// ════════════════════════════════════════════════════════════
+// BENCHMARK GERAL + VISÃO GERAL EXTRA — módulo de dados e render
+// ════════════════════════════════════════════════════════════
+
+// ── CLUSTER DATA (tópico 3) ──
+const BM_CLUSTERS = [
+  {
+    id:'A', color:'#534AB7', bg:'#EEEDFE', bd:'#AFA9EC',
+    name:{pt:'Conteudistas & Sistemas', es:'Contenidistas & Sistemas'},
+    tag:{pt:'A Velha Guarda', es:'La Vieja Guardia'},
+    coin:{pt:'Segurança Pedagógica e Metodologia', es:'Seguridad Pedagógica y Metodología'},
+    desc:{pt:'Os incumbentes do mercado. Vendem produtos tangíveis (livros, apostilas) e dependem da validação da coordenação pedagógica. Fortes no alinhamento à BNCC e formação de professores, mas enfrentam a obsolescência do formato físico.',
+          es:'Los incumbentes del mercado. Venden productos tangibles (libros, cuadernillos) y dependen de la validación de la coordinación pedagógica. Fuertes en alineación a la BNCC y formación docente, pero enfrentan la obsolescencia del formato físico.'},
+    groups:[
+      {label:{pt:'Sistemas de Ensino Especializados',es:'Sistemas de Enseñanza Especializados'},
+       cos:['DSOP','Oficina das Finanças','BEÎ Educação','OPEE (Leo Fraiman)']},
+      {label:{pt:'Editoras & Paradidáticos',es:'Editoriales & Paradidácticos'},
+       cos:['Santillana','Moderna','FTD','Editora do Brasil','Editora CAB','Callis','Mais Ativos','Brinque Book']},
+      {label:{pt:'Outros players',es:'Otros players'},
+       cos:['Aprende Brasil (Positivo)','Gênio das Finanças','Kit Poderoso Cofrinho']},
+    ]
+  },
+  {
+    id:'B', color:'#1D9E75', bg:'#E1F5EE', bd:'#5DCAA5',
+    name:{pt:'EdTechs', es:'EdTechs'},
+    tag:{pt:'Os Desafiantes de Engajamento', es:'Los Retadores del Engagement'},
+    coin:{pt:'Dopamina, Dados e Gamificação', es:'Dopamina, Datos y Gamificación'},
+    desc:{pt:'Nascidas para resolver a apatia da sala de aula. Não vendem "conteúdo para ler", mas "experiências para viver" — substituem a aula expositiva por simulação, interatividade e métricas em tempo real. O risco é serem vistas como "passatempo".',
+          es:'Nacidas para resolver la apatía del aula. No venden "contenido para leer", sino "experiencias para vivir" — sustituyen la clase expositiva por simulación, interactividad y métricas en tiempo real. El riesgo es ser vistas como "pasatiempo".'},
+    groups:[
+      {label:{pt:'Game-Based Learning',es:'Game-Based Learning'},
+       cos:['EduCash (Educar 3.0)','Tindin']},
+      {label:{pt:'Sistemas Híbridos / Phygital',es:'Sistemas Híbridos / Phygital'},
+       cos:['FORME','Finkids','Tangram']},
+      {label:{pt:'Maker, Skills & Carreira',es:'Maker, Skills & Carrera'},
+       cos:['Happy Money','Melver','Super Cérebro']},
+      {label:{pt:'Behavioral Tools',es:'Behavioral Tools'},
+       cos:['Mooney','Barkus']},
+      {label:{pt:'Outras plataformas analisadas',es:'Otras plataformas analizadas'},
+       cos:['Real Grana','DreamShaper','Alfi','Global Breakers','Matific']},
+    ]
+  },
+  {
+    id:'C', color:'#185FA5', bg:'#E6F1FB', bd:'#85B7EB',
+    name:{pt:'Fintechs', es:'Fintechs'},
+    tag:{pt:'A Infraestrutura', es:'La Infraestructura'},
+    coin:{pt:'Realidade, Meios de Pagamento e Modernidade', es:'Realidad, Medios de Pago y Modernidad'},
+    desc:{pt:'Entram na escola não como pedagogia, mas como infraestrutura. Resolvem problemas operacionais (filas na cantina, dinheiro perdido) ou atuam como parceiros de "vida real", oferecendo a primeira conta bancária do aluno. A escola é um canal de aquisição (CAC).',
+          es:'Entran en la escuela no como pedagogía, sino como infraestructura. Resuelven problemas operativos (filas en la cantina, dinero perdido) o actúan como socios de "vida real", ofreciendo la primera cuenta bancaria del alumno. La escuela es un canal de adquisición (CAC).'},
+    groups:[
+      {label:{pt:'Wallets & Controle Parental',es:'Wallets & Control Parental'},
+       cos:['Mozper','Powpay','Yours Bank','Blu (BS2)']},
+      {label:{pt:'Neobanks GenZ',es:'Neobanks GenZ'},
+       cos:['NG.CASH','Inter Kids','C6 Yellow','NextJoy','Z1']},
+      {label:{pt:'Cashless Escolar',es:'Cashless Escolar'},
+       cos:['SnackUp','Nutrebem','Cantina Escola','FestPay']},
+      {label:{pt:'Goal-Based Savings',es:'Goal-Based Savings'},
+       cos:['Pulpa']},
+    ]
+  },
+  {
+    id:'D', color:'#BA7517', bg:'#FAEEDA', bd:'#EF9F27',
+    name:{pt:'Governo, ONGs & Social', es:'Gobierno, ONGs & Social'},
+    tag:{pt:'O "Não-Mercado"', es:'El "No-Mercado"'},
+    coin:{pt:'Escala Massiva, Gratuidade e Impacto Social', es:'Escala Masiva, Gratuidad e Impacto Social'},
+    desc:{pt:'Frequentemente ignorado na análise de mercado privado, mas é o maior concorrente em volume e legitimidade. Oferece soluções gratuitas ou subsidiadas, com forte aval institucional — a principal barreira para players privados em escolas públicas.',
+          es:'Frecuentemente ignorado en el análisis de mercado privado, pero es el mayor competidor en volumen y legitimidad. Ofrece soluciones gratuitas o subsidiadas, con fuerte aval institucional — la principal barrera para players privados en escuelas públicas.'},
+    groups:[
+      {label:{pt:'Soluções de Rede (B2G)',es:'Soluciones de Red (B2G)'},
+       cos:['Aprende Brasil (Positivo)']},
+      {label:{pt:'Institucionais & Terceiro Setor',es:'Institucionales & Tercer Sector'},
+       cos:['Aprender Valor (BC)','Junior Achievement','AEF-Brasil','Instituto Sicoob','Sebrae','Projeto Bem Gasto (Insper)']},
+    ]
+  },
+];
+
+// ── SWOT CRUZADA (tópico 4) ──
+const BM_SWOT = {
+  cols:[
+    {key:'cont', color:'#534AB7', bg:'#EEEDFE', bd:'#AFA9EC',
+     name:{pt:'Conteudistas',es:'Contenidistas'}, sub:{pt:'Editoras',es:'Editoriales'}},
+    {key:'edt', color:'#1D9E75', bg:'#E1F5EE', bd:'#5DCAA5',
+     name:{pt:'EdTechs',es:'EdTechs'}, sub:{pt:'Gamificação',es:'Gamificación'}},
+    {key:'fin', color:'#185FA5', bg:'#E6F1FB', bd:'#85B7EB',
+     name:{pt:'Fintechs',es:'Fintechs'}, sub:{pt:'Bancos',es:'Bancos'}},
+  ],
+  rows:[
+    {key:'F', label:{pt:'Fortalezas',es:'Fortalezas'}, tone:'pos',
+     cells:{
+      cont:{pt:['Confiança pedagógica: a coordenação confia no livro','Capilaridade: canais de venda já estabelecidos','Formação docente: capacidade de treinar professores em massa'],
+            es:['Confianza pedagógica: la coordinación confía en el libro','Capilaridad: canales de venta ya establecidos','Formación docente: capacidad de capacitar profesores en masa']},
+      edt:{pt:['Engajamento: falam a linguagem nativa do aluno (jogos/telas)','Data Analytics: métricas de aprendizado em tempo real','Escalabilidade: custo marginal zero por usuário (SaaS)'],
+           es:['Engagement: hablan el lenguaje nativo del alumno (juegos/pantallas)','Data Analytics: métricas de aprendizaje en tiempo real','Escalabilidad: costo marginal cero por usuario (SaaS)']},
+      fin:{pt:['Realidade: ensinam com dinheiro de verdade, não fictício','Capital (CAC): podem subsidiar a entrada visando o LTV','UX/UI: experiência muito superior às plataformas escolares'],
+           es:['Realidad: enseñan con dinero real, no ficticio','Capital (CAC): pueden subsidiar la entrada apuntando al LTV','UX/UI: experiencia muy superior a las plataformas escolares']},
+     }},
+    {key:'W', label:{pt:'Fraquezas',es:'Debilidades'}, tone:'neg',
+     cells:{
+      cont:{pt:['Formato estático: o papel não acompanha a velocidade do mercado','Baixo engajamento: alunos consideram o material "chato"','Custo: logística e impressão encarecem o produto final'],
+            es:['Formato estático: el papel no acompaña la velocidad del mercado','Bajo engagement: los alumnos consideran el material "aburrido"','Costo: logística e impresión encarecen el producto final']},
+      edt:{pt:['Infraestrutura: travam se a internet da escola for ruim','Rigor pedagógico: vistos como "passatempo", não aula','Resistência docente: professores mais velhos temem a tecnologia'],
+           es:['Infraestructura: se traban si el internet de la escuela es malo','Rigor pedagógico: vistos como "pasatiempo", no clase','Resistencia docente: profesores mayores temen la tecnología']},
+      fin:{pt:['Viés comercial: a escola desconfia que o fim é vender cartão','Superficialidade: focam em "como usar o app", não em "como pensar"','Barreiras éticas: pais rejeitam exposição bancária precoce'],
+           es:['Sesgo comercial: la escuela sospecha que el fin es vender tarjeta','Superficialidad: foco en "cómo usar el app", no en "cómo pensar"','Barreras éticas: los padres rechazan exposición bancaria precoz']},
+     }},
+    {key:'O', label:{pt:'Oportunidades',es:'Oportunidades'}, tone:'pos',
+     cells:{
+      cont:{pt:['Phygital: comprar EdTechs para modernizar o portfólio','Venda consultiva: vender "cidadania" para blindar o contrato','B2G: escalar em redes públicas que exigem material físico'],
+            es:['Phygital: comprar EdTechs para modernizar el portafolio','Venta consultiva: vender "ciudadanía" para blindar el contrato','B2G: escalar en redes públicas que exigen material físico']},
+      edt:{pt:['White-Label: ser o motor digital das grandes editoras','Integração ERP: entrar no sistema de gestão da escola','Laboratório seguro: ser o simulador antes da conta real'],
+           es:['White-Label: ser el motor digital de las grandes editoriales','Integración ERP: entrar en el sistema de gestión de la escuela','Laboratorio seguro: ser el simulador antes de la cuenta real']},
+      fin:{pt:['Parcerias: financiar projetos pedagógicos em troca de branding','Ecossistema: unir cantina, catraca e mesada num app só','Educação parental: focar nos pais para entrar na escola'],
+           es:['Alianzas: financiar proyectos pedagógicos a cambio de branding','Ecosistema: unir cantina, torniquete y mesada en una sola app','Educación parental: enfocar en los padres para entrar a la escuela']},
+     }},
+    {key:'T', label:{pt:'Ameaças',es:'Amenazas'}, tone:'neg',
+     cells:{
+      cont:{pt:['Irrelevância: serem trocadas por plataformas adaptativas','Conteúdo grátis: concorrência com Banco Central e YouTube','Custo do papel: aumento de insumos inviabilizando margens'],
+            es:['Irrelevancia: ser sustituidas por plataformas adaptativas','Contenido gratis: competencia con Banco Central y YouTube','Costo del papel: aumento de insumos inviabilizando márgenes']},
+      edt:{pt:['Screen fatigue: movimento de "banimento de celulares" nas escolas','Big Techs: Google lançar módulos financeiros no Classroom','Churn: facilidade de cancelamento da assinatura'],
+           es:['Screen fatigue: movimiento de "prohibición de celulares" en escuelas','Big Techs: Google lanzando módulos financieros en Classroom','Churn: facilidad de cancelación de la suscripción']},
+      fin:{pt:['Regulação: proibição de marketing infantil em escolas','Crise de imagem: jovens endividados ou fraudes na plataforma','Churn por idade: o jovem migrar para "bancões" ao crescer'],
+           es:['Regulación: prohibición de marketing infantil en escuelas','Crisis de imagen: jóvenes endeudados o fraudes en la plataforma','Churn por edad: el joven migra a "bancos grandes" al crecer']},
+     }},
+  ]
+};
+
+// ── TENDÊNCIAS / HORIZONTES (tópico 7) ──
+const BM_TENDENCIAS = [
+  {letter:'A', color:'#534AB7',
+   title:{pt:'Convergência de Complementares',es:'Convergencia de Complementarios'},
+   problem:{pt:'Disputa de grade e bolso',es:'Disputa de horario y bolsillo'},
+   text:{pt:'Em vez de vender uma disciplina extra, vender um projeto transversal que una competências — ex: um projeto Maker onde o orçamento é a base, ou Inglês focado em Business & Money. Resolve o problema financeiro da família.',
+         es:'En vez de vender una disciplina extra, vender un proyecto transversal que una competencias — ej: un proyecto Maker donde el presupuesto es la base, o Inglés enfocado en Business & Money. Resuelve el problema financiero de la familia.'}},
+  {letter:'B', color:'#1D9E75',
+   title:{pt:'Propostas Nativamente Figitais',es:'Propuestas Nativamente Figitales'},
+   problem:{pt:'Ruptura impresso × digital',es:'Ruptura impreso × digital'},
+   text:{pt:'Criar materiais onde o impresso e o digital sejam interdependentes, não acessórios. O livro não é só leitura — é um "tabuleiro" ou guia de navegação; o app não é repositório — é a ferramenta de ação.',
+         es:'Crear materiales donde lo impreso y lo digital sean interdependientes, no accesorios. El libro no es solo lectura — es un "tablero" o guía de navegación; el app no es repositorio — es la herramienta de acción.'}},
+  {letter:'C', color:'#185FA5',
+   title:{pt:'Simbiose de Mercado',es:'Simbiosis de Mercado'},
+   problem:{pt:'Falta de tração e acesso',es:'Falta de tracción y acceso'},
+   text:{pt:'Modelos de co-branding e joint ventures: a Editora entra com metodologia/acesso e a Fintech/EdTech entra com infraestrutura funcional. A EdTech ganha escala, a Editora ganha modernidade.',
+         es:'Modelos de co-branding y joint ventures: la Editorial aporta metodología/acceso y la Fintech/EdTech aporta infraestructura funcional. La EdTech gana escala, la Editorial gana modernidad.'}},
+  {letter:'D', color:'#BA7517',
+   title:{pt:'Copilotagem Docente via IA',es:'Copilotaje Docente vía IA'},
+   problem:{pt:'Insegurança e escassez de professores',es:'Inseguridad y escasez de profesores'},
+   text:{pt:'Usar IA não para substituir, mas para apoiar o professor em tempo real — um monitor técnico que responde dúvidas complexas e sugere roteiros, permitindo que o professor foque na mediação pedagógica.',
+         es:'Usar IA no para sustituir, sino para apoyar al profesor en tiempo real — un monitor técnico que responde dudas complejas y sugiere guiones, permitiendo que el profesor se enfoque en la mediación pedagógica.'}},
+  {letter:'E', color:'#993556',
+   title:{pt:'Simulação Híbrida e Interatividade',es:'Simulación Híbrida e Interactividad'},
+   problem:{pt:'Limites regulatórios e riscos reais',es:'Límites regulatorios y riesgos reales'},
+   text:{pt:'O uso de jogos analógicos e híbridos. Tabuleiro e cartas são muito bem aceitos na escola (socialização offline) e funcionam como simuladores poderosos para exercitar decisão, risco e negociação num ambiente seguro.',
+         es:'El uso de juegos analógicos e híbridos. Tablero y cartas son muy bien aceptados en la escuela (socialización offline) y funcionan como simuladores poderosos para ejercitar decisión, riesgo y negociación en un entorno seguro.'}},
+  {letter:'F', color:'#D85A30',
+   title:{pt:'Do Cálculo ao Comportamento',es:'Del Cálculo al Comportamiento'},
+   problem:{pt:'Abstração e falta de conexão emocional',es:'Abstracción y falta de conexión emocional'},
+   text:{pt:'Mover o eixo da Matemática Financeira para a Educação Socioemocional Financeira Comportamental: a relação com o dinheiro, o impulso, o desejo, a frustração e a dinâmica familiar. Entra pela verba de Projeto de Vida e Saúde Mental.',
+         es:'Mover el eje de la Matemática Financiera hacia la Educación Socioemocional Financiera Conductual: la relación con el dinero, el impulso, el deseo, la frustración y la dinámica familiar. Entra por el presupuesto de Proyecto de Vida y Salud Mental.'}},
+];
+
+// ── CONCLUSÃO (tópico 8) ──
+const BM_CONCLUSAO = {
+  intro:{pt:'A análise do ecossistema K-12 no Brasil revela um mercado em transição: saímos da fase de "conscientização" para a de "implementação", impulsionada pela BNCC. Mas a simples oferta de conteúdo já não basta — há saturação de soluções isoladas que concorrem entre si. A relevância dependerá de três movimentos de evolução.',
+         es:'El análisis del ecosistema K-12 en Brasil revela un mercado en transición: salimos de la fase de "concientización" hacia la de "implementación", impulsada por la BNCC. Pero la simple oferta de contenido ya no basta — hay saturación de soluciones aisladas que compiten entre sí. La relevancia dependerá de tres movimientos de evolución.'},
+  moves:[
+    {n:'1', color:'#534AB7',
+     title:{pt:'Da Competição para a Integração',es:'De la Competencia a la Integración'},
+     text:{pt:'Soluções que disputam espaço como "mais uma disciplina extra" enfrentam alta resistência. O caminho é a integração transversal — produtos que dialogam com Matemática, História e Projeto de Vida, deixando de ser "custo de tempo" para ser facilitador pedagógico.',
+           es:'Las soluciones que disputan espacio como "una disciplina extra más" enfrentan alta resistencia. El camino es la integración transversal — productos que dialogan con Matemática, Historia y Proyecto de Vida, dejando de ser "costo de tiempo" para ser facilitador pedagógico.'}},
+    {n:'2', color:'#1D9E75',
+     title:{pt:'A Convergência de Formatos (Phygital)',es:'La Convergencia de Formatos (Phygital)'},
+     text:{pt:'A divisão rígida entre Editoras (segurança acadêmica) e Fintechs/EdTechs (agilidade e infraestrutura) tende a desaparecer. O ambiente escolar pede equilíbrio: a tangibilidade do físico somada à interatividade do digital.',
+           es:'La división rígida entre Editoriales (seguridad académica) y Fintechs/EdTechs (agilidad e infraestructura) tiende a desaparecer. El entorno escolar pide equilibrio: la tangibilidad de lo físico sumada a la interactividad de lo digital.'}},
+    {n:'3', color:'#D85A30',
+     title:{pt:'Do Cálculo para o Comportamento',es:'Del Cálculo al Comportamiento'},
+     text:{pt:'Enquanto o mercado focar apenas na matemática financeira, a barreira de entrada será alta. Ao migrar para a esfera comportamental e socioemocional — hábitos, escolhas e cidadania — a Educação Financeira ganha fôlego e se torna mais necessária para as famílias.',
+           es:'Mientras el mercado se enfoque solo en la matemática financiera, la barrera de entrada será alta. Al migrar a la esfera conductual y socioemocional — hábitos, elecciones y ciudadanía — la Educación Financiera gana impulso y se vuelve más necesaria para las familias.'}},
+  ],
+  synthesis:{pt:'O mercado de Educação Financeira não precisa de mais "aulas sobre dinheiro", mas de sistemas que ajudem a comunidade escolar a lidar com ele. A liderança não virá apenas do melhor conteúdo, mas da solução que melhor resolver a equação entre a escassez de tempo da escola e a necessidade de inovação na sala de aula.',
+             es:'El mercado de Educación Financiera no necesita más "clases sobre dinero", sino sistemas que ayuden a la comunidad escolar a lidiar con él. El liderazgo no vendrá solo del mejor contenido, sino de la solución que mejor resuelva la ecuación entre la escasez de tiempo de la escuela y la necesidad de innovación en el aula.'}
+};
+
+
+// ════════════════════════════════════════════════════════════
+// VISÃO GERAL EXTRA — dados (tópicos 1, 2, 5, 6)
+// ════════════════════════════════════════════════════════════
+
+// ── TÓPICO 1: CONTEXTO ──
+const OV_CONTEXTO = {
+  eyebrow:{pt:'O paradoxo brasileiro',es:'La paradoja brasileña'},
+  title:{pt:'Demanda social vs. vácuo de oferta',es:'Demanda social vs. vacío de oferta'},
+  lead:{pt:'A Educação Financeira no Brasil vive um paradoxo estrutural: nunca foi tão socialmente urgente e legalmente exigida — mas as soluções escolares disponíveis falham sistematicamente em engajar alunos e reter contratos de longo prazo.',
+        es:'La Educación Financiera en Brasil vive una paradoja estructural: nunca fue tan socialmente urgente y legalmente exigida — pero las soluciones escolares disponibles fallan sistemáticamente en enganchar alumnos y retener contratos de largo plazo.'},
+  stats:[
+    {n:'72M+', color:'#E8192C',
+     l:{pt:'inadimplentes no Brasil, com a faixa de 18–25 anos crescendo de forma preocupante',es:'morosos en Brasil, con la franja de 18–25 años creciendo de forma preocupante'},
+     src:{pt:'Mapa da Inadimplência · Serasa',es:'Mapa de la Morosidad · Serasa'}},
+    {n:'15%', color:'#BA7517',
+     l:{pt:'da população já fez apostas esportivas ("Bets") — e 22% destes consideram a aposta uma forma de investimento',es:'de la población ya hizo apuestas deportivas ("Bets") — y el 22% de estos considera la apuesta una forma de inversión'},
+     src:{pt:'Raio X do Investidor · Anbima',es:'Radiografía del Inversor · Anbima'}},
+    {n:'2020', color:'#534AB7',
+     l:{pt:'BNCC torna a educação financeira obrigatória — mas as escolas cumprem a lei "para inglês ver"',es:'la BNCC vuelve obligatoria la educación financiera — pero las escuelas cumplen la ley "para cubrir las apariencias"'},
+     src:{pt:'BNCC · Lei 14.181/2020',es:'BNCC · Ley 14.181/2020'}},
+  ],
+  close:{pt:'O resultado é um descompasso: o mercado oferece produtos desconectados da realidade digital e instantânea do aluno, enquanto a "alfabetização financeira" prometida pela lei não acontece na prática.',
+         es:'El resultado es un desajuste: el mercado ofrece productos desconectados de la realidad digital e instantánea del alumno, mientras la "alfabetización financiera" prometida por la ley no ocurre en la práctica.'}
+};
+
+// ── TÓPICO 2: TAM / SAM / SOM ──
+const OV_MARKET = {
+  eyebrow:{pt:'Dimensionamento de mercado',es:'Dimensionamiento de mercado'},
+  title:{pt:'TAM · SAM · SOM cruzado com maturidade pedagógica',es:'TAM · SAM · SOM cruzado con madurez pedagógica'},
+  lead:{pt:'Para evitar a "miopia de marketing" de tratar todas as escolas como iguais, cruzamos a metodologia TAM/SAM/SOM com a maturidade pedagógica da instituição.',
+        es:'Para evitar la "miopía de marketing" de tratar a todas las escuelas como iguales, cruzamos la metodología TAM/SAM/SOM con la madurez pedagógica de la institución.'},
+  funnel:[
+    {tier:'TAM', color:'#534AB7',
+     name:{pt:'Cenário Nacional',es:'Escenario Nacional'},
+     big:'179.300', unit:{pt:'escolas de educação básica',es:'escuelas de educación básica'},
+     sub:'47,3M', subl:{pt:'matrículas · ~80% estatal',es:'matrículas · ~80% estatal'},
+     note:{pt:'Teto máximo do mercado. Acesso via editais (PNLD) e licitações B2G.',es:'Techo máximo del mercado. Acceso vía licitaciones (PNLD) y B2G.'}},
+    {tier:'SAM', color:'#1D9E75',
+     name:{pt:'Mercado Privado',es:'Mercado Privado'},
+     big:'42.500', unit:{pt:'escolas particulares',es:'escuelas particulares'},
+     sub:'9,5M', subl:{pt:'matrículas · +4,7% em 2023/24',es:'matrículas · +4,7% en 2023/24'},
+     note:{pt:'Mercado endereçável para vendas B2B diretas. Decisão descentralizada.',es:'Mercado direccionable para ventas B2B directas. Decisión descentralizada.'}},
+    {tier:'SOM', color:'#E8192C',
+     name:{pt:'Mercado Acessível Real',es:'Mercado Accesible Real'},
+     big:'5.000', unit:{pt:'escolas-alvo (meta)',es:'escuelas-objetivo (meta)'},
+     sub:'11,7%', subl:{pt:'do SAM · liderança de categoria',es:'del SAM · liderazgo de categoría'},
+     note:{pt:'Meta que estabeleceria o "Padrão da Categoria" no país.',es:'Meta que establecería el "Estándar de la Categoría" en el país.'}},
+  ],
+  submarkets:[
+    {pct:'15%', color:'#534AB7', n:'~6.300',
+     name:{pt:'Mercado Especialista',es:'Mercado Especialista'},
+     how:{pt:'Finanças como DISCIPLINA',es:'Finanzas como DISCIPLINA'},
+     desc:{pt:'Escolas de elite com aula específica na grade. Contratam sistemas completos (livro + plataforma + formação). Alto ticket, alta exigência.',es:'Escuelas de elite con clase específica en el horario. Contratan sistemas completos (libro + plataforma + formación). Alto ticket, alta exigencia.'},
+     players:'DSOP · Oficina das Finanças · OPEE',
+     challenge:{pt:'Saturado, alto custo de troca',es:'Saturado, alto costo de cambio'}},
+    {pct:'40%', color:'#1D9E75', n:'~17.000',
+     name:{pt:'Mercado Embarcado',es:'Mercado Embarcado'},
+     how:{pt:'Finanças como CONTEÚDO TRANSVERSAL',es:'Finanzas como CONTENIDO TRANSVERSAL'},
+     desc:{pt:'Escolas conteudistas. "Têm" educação financeira, mas é um capítulo no livro de Matemática. Confiam no Sistema de Ensino (Poliedro, Anglo, FTD).',es:'Escuelas contenidistas. "Tienen" educación financiera, pero es un capítulo en el libro de Matemática. Confían en el Sistema de Enseñanza (Poliedro, Anglo, FTD).'},
+     players:'Poliedro · Anglo · FTD',
+     challenge:{pt:'A escola acha que "já resolveu"',es:'La escuela cree que "ya lo resolvió"'}},
+    {pct:'45%', color:'#185FA5', n:'~19.200',
+     name:{pt:'Mercado Latente',es:'Mercado Latente'},
+     how:{pt:'Finanças como IMPROVISO',es:'Finanzas como IMPROVISACIÓN'},
+     desc:{pt:'A "cauda longa". Escolas de bairro sem orçamento, tempo ou equipe. Usam soluções gratuitas (YouTube, PDFs do Banco Central). O maior oceano azul.',es:'La "cola larga". Escuelas de barrio sin presupuesto, tiempo o equipo. Usan soluciones gratuitas (YouTube, PDFs del Banco Central). El mayor océano azul.'},
+     players:{pt:'Soluções grátis · Plug & Play',es:'Soluciones gratis · Plug & Play'},
+     challenge:{pt:'Precisa de "Plug & Play" barato',es:'Necesita "Plug & Play" barato'}},
+  ]
+};
+
+// ── TÓPICO 5: PERFIS DE ESCOLAS ──
+const OV_PERFIS = {
+  eyebrow:{pt:'Targeting',es:'Targeting'},
+  title:{pt:'Três perfis de escola, três estratégias',es:'Tres perfiles de escuela, tres estrategias'},
+  lead:{pt:'Entender a escola não pelo preço da mensalidade, mas pela maturidade do tema na grade, é crucial para evitar erros de posicionamento. O que é diferencial para uns, é custo operacional para outros.',
+        es:'Entender la escuela no por el precio de la mensualidad, sino por la madurez del tema en el horario, es crucial para evitar errores de posicionamiento. Lo que es diferencial para unos, es costo operativo para otros.'},
+  profiles:[
+    {n:'1', color:'#534AB7',
+     name:{pt:'A Elite Consolidada',es:'La Elite Consolidada'},
+     persona:{pt:'Alpha · Early Adopters',es:'Alpha · Early Adopters'},
+     scenario:{pt:'Instituições que já superaram a implementação da BNCC. Ensinam finanças há mais de uma década, com material próprio.',es:'Instituciones que ya superaron la implementación de la BNCC. Enseñan finanzas hace más de una década, con material propio.'},
+     driver:{pt:'Exclusividade e status tecnológico',es:'Exclusividad y estatus tecnológico'},
+     buy:{pt:'Não buscam "material", buscam "diferencial competitivo". Valorizam customização e rigor acadêmico.',es:'No buscan "material", buscan "diferencial competitivo". Valoran customización y rigor académico.'},
+     fit:['BEÎ Educação','Oficina das Finanças','Tindin','Melver','Happy Money','Super Cérebro']},
+    {n:'2', color:'#1D9E75',
+     name:{pt:'A Camada Intermediária',es:'La Capa Intermedia'},
+     persona:{pt:'Followers · Pragmatistas',es:'Followers · Pragmatistas'},
+     scenario:{pt:'O maior volume de contratos. A coordenação está frustrada: o material cumpre a lei, mas as aulas são expositivas e o impacto é baixo.',es:'El mayor volumen de contratos. La coordinación está frustrada: el material cumple la ley, pero las clases son expositivas y el impacto es bajo.'},
+     driver:{pt:'Retenção e engajamento',es:'Retención y engagement'},
+     buy:{pt:'Presas a contratos com Sistemas, mas abertas a "camadas de valor" (add-ons) que resolvam o engajamento sem brigar com o livro principal.',es:'Atadas a contratos con Sistemas, pero abiertas a "capas de valor" (add-ons) que resuelvan el engagement sin pelear con el libro principal.'},
+     fit:['EduCash','Tindin','FORME','Finkids','OPEE','DSOP']},
+    {n:'3', color:'#BA7517',
+     name:{pt:'A Massa',es:'La Masa'},
+     persona:{pt:'Efficiency Seekers',es:'Efficiency Seekers'},
+     scenario:{pt:'A imensa maioria do mercado. Margens apertadas e equipes multitarefa. A educação financeira é obrigação burocrática que não pode gerar custo extra.',es:'La inmensa mayoría del mercado. Márgenes ajustados y equipos multitarea. La educación financiera es obligación burocrática que no puede generar costo extra.'},
+     driver:{pt:'Custo-benefício e facilidade',es:'Costo-beneficio y facilidad'},
+     buy:{pt:'Preferem "Plug & Play" gerenciável pela secretaria. Se for grátis ou muito barato, a barreira de entrada desaparece.',es:'Prefieren "Plug & Play" gestionable por secretaría. Si es gratis o muy barato, la barrera de entrada desaparece.'},
+     fit:['Paradidáticos','Mooney','Barkus','Inter Kids','NG.CASH','Aprender Valor']},
+  ]
+};
+
+// ── TÓPICO 6: DORES ESTRUTURAIS ──
+const OV_DORES = {
+  eyebrow:{pt:'Barreiras de entrada',es:'Barreras de entrada'},
+  title:{pt:'Cinco dores estruturais do mercado',es:'Cinco dolores estructurales del mercado'},
+  lead:{pt:'Para além da qualidade do material, há barreiras logísticas e culturais que impedem a escala. A escola não compra "conteúdo" — ela compra a resolução de uma equação complexa de tempo e dinheiro.',
+        es:'Más allá de la calidad del material, hay barreras logísticas y culturales que impiden la escala. La escuela no compra "contenido" — compra la resolución de una ecuación compleja de tiempo y dinero.'},
+  pains:[
+    {n:'01', color:'#E8192C',
+     title:{pt:'Time Share vs. Wallet Share',es:'Time Share vs. Wallet Share'},
+     text:{pt:'A grade já está inchada — inserir Finanças exige retirar tempo de Matemática ou História. E no contraturno pago, colide com o bolso saturado da família (que já paga Inglês, robótica, transporte). A solução vencedora precisa ser substitutiva (inclusa na mensalidade) ou invisível (absorvida por parcerias).',
+           es:'El horario ya está saturado — insertar Finanzas exige quitar tiempo de Matemática o Historia. Y en el contraturno pago, choca con el bolsillo saturado de la familia (que ya paga Inglés, robótica, transporte). La solución ganadora debe ser sustitutiva (incluida en la mensualidad) o invisible (absorbida por alianzas).'}},
+    {n:'02', color:'#BA7517',
+     title:{pt:'O "Apagão" Docente',es:'El "Apagón" Docente'},
+     text:{pt:'Não existe licenciatura em Educação Financeira no Brasil. Quem assume a aula é o professor de Matemática ou História — muitas vezes endividado e inseguro. O medo de perguntas ("Professor, o que é Bitcoin?") leva a sabotar a disciplina ou reduzi-la a "resolução de continhas".',
+           es:'No existe licenciatura en Educación Financiera en Brasil. Quien asume la clase es el profesor de Matemática o Historia — muchas veces endeudado e inseguro. El miedo a preguntas ("Profe, ¿qué es Bitcoin?") lleva a sabotear la disciplina o reducirla a "hacer cuentitas".'}},
+    {n:'03', color:'#534AB7',
+     title:{pt:'Abstração vs. Realidade Digital',es:'Abstracción vs. Realidad Digital'},
+     text:{pt:'O currículo foca em juros compostos e aposentadoria. Mas o aluno de 12 anos quer saber como comprar skins, monetizar um canal ou evitar golpes no PIX. Entregar "teoria macroeconômica" para a geração da "economia da atenção" gera desconexão imediata — conteúdo percebido como "coisa de velho".',
+           es:'El currículo se enfoca en interés compuesto y jubilación. Pero el alumno de 12 años quiere saber cómo comprar skins, monetizar un canal o evitar estafas en el PIX. Entregar "teoría macroeconómica" a la generación de la "economía de la atención" genera desconexión inmediata — contenido percibido como "cosa de viejos".'}},
+    {n:'04', color:'#1D9E75',
+     title:{pt:'A Miopia do Individualismo',es:'La Miopía del Individualismo'},
+     text:{pt:'Quase todas as soluções focam na esfera individual ("o seu dinheiro", "o seu sonho"), ignorando que a criança vive na esfera coletiva (orçamento familiar) e social (cidadania). Ensinar a poupar sem discutir a dinâmica familiar gera frustração — uma educação financeira que ignora o contexto social é incompleta.',
+           es:'Casi todas las soluciones se enfocan en la esfera individual ("tu dinero", "tu sueño"), ignorando que el niño vive en la esfera colectiva (presupuesto familiar) y social (ciudadanía). Enseñar a ahorrar sin discutir la dinámica familiar genera frustración — una educación financiera que ignora el contexto social es incompleta.'}},
+    {n:'05', color:'#185FA5',
+     title:{pt:'Fricção Operacional na Cauda Longa',es:'Fricción Operativa en la Cola Larga'},
+     text:{pt:'Para as ~42.000 escolas que não são de elite, a complexidade é inimiga da adoção. Softwares pesados, logins complexos por aluno ou treinamentos de 40 horas são descartados na triagem. Se a solução der trabalho administrativo, ela não entra — mesmo que seja gratuita.',
+           es:'Para las ~42.000 escuelas que no son de elite, la complejidad es enemiga de la adopción. Softwares pesados, logins complejos por alumno o capacitaciones de 40 horas son descartados en el filtro. Si la solución da trabajo administrativo, no entra — aunque sea gratuita.'}},
+  ]
+};
+
+
+// ════════════════════════════════════════════════════════════
+// RENDER FUNCTIONS — Benchmark + Overview Extra
+// ════════════════════════════════════════════════════════════
+function _L(o){ return (o && typeof o==='object' && (o.pt||o.es)) ? (o[currentLang]||o.pt) : o; }
+
+function coBadge(name, color, bg, bd){
+  return '<span class="bm-badge" style="background:'+bg+';border-color:'+bd+';color:'+color+'">'+name+'</span>';
+}
+
+// ── BENCHMARK: render clusters (tópico 3) ──
+function renderClusters(){
+  var h = '';
+  BM_CLUSTERS.forEach(function(c){
+    h += '<div class="bm-cluster" style="border-color:'+c.bd+'">';
+    h += '<div class="bm-cluster-head" style="background:'+c.bg+'">';
+    h += '<div class="bm-cluster-letter" style="background:'+c.color+'">'+c.id+'</div>';
+    h += '<div class="bm-cluster-headtext">';
+    h += '<div class="bm-cluster-name" style="color:'+c.color+'">'+_L(c.name)+'</div>';
+    h += '<div class="bm-cluster-tag">'+_L(c.tag)+'</div>';
+    h += '</div></div>';
+    h += '<div class="bm-cluster-body">';
+    h += '<div class="bm-coin"><span class="bm-coin-label">'+(currentLang==='es'?'Moneda de cambio':'Moeda de troca')+'</span><span class="bm-coin-val" style="color:'+c.color+'">'+_L(c.coin)+'</span></div>';
+    h += '<p class="bm-cluster-desc">'+_L(c.desc)+'</p>';
+    c.groups.forEach(function(g){
+      h += '<div class="bm-group"><div class="bm-group-label">'+_L(g.label)+'</div><div class="bm-badges">';
+      g.cos.forEach(function(co){ h += coBadge(co, c.color, c.bg, c.bd); });
+      h += '</div></div>';
+    });
+    h += '</div></div>';
+  });
+  return h;
+}
+
+// ── BENCHMARK: render SWOT cruzada (tópico 4) ──
+function renderSwotCruzada(){
+  var h = '<div class="bm-swot-grid">';
+  // header row
+  h += '<div class="bm-swot-corner"></div>';
+  BM_SWOT.cols.forEach(function(col){
+    h += '<div class="bm-swot-colhead" style="background:'+col.bg+';border-color:'+col.bd+'">';
+    h += '<span class="bm-swot-colname" style="color:'+col.color+'">'+_L(col.name)+'</span>';
+    h += '<span class="bm-swot-colsub">'+_L(col.sub)+'</span></div>';
+  });
+  // body rows
+  BM_SWOT.rows.forEach(function(row){
+    var toneClass = row.tone==='pos' ? 'bm-tone-pos' : 'bm-tone-neg';
+    h += '<div class="bm-swot-rowlabel '+toneClass+'">'+_L(row.label)+'</div>';
+    BM_SWOT.cols.forEach(function(col){
+      h += '<div class="bm-swot-cell">';
+      var items = _L(row.cells[col.key]);
+      items.forEach(function(it){
+        h += '<div class="bm-swot-item '+toneClass+'"><span class="bm-swot-dot"></span>'+it+'</div>';
+      });
+      h += '</div>';
+    });
+  });
+  h += '</div>';
+  return h;
+}
+
+// ── BENCHMARK: render tendências (tópico 7) ──
+function renderTendencias(){
+  var h = '<div class="bm-trends">';
+  BM_TENDENCIAS.forEach(function(t){
+    h += '<div class="bm-trend" style="border-top-color:'+t.color+'">';
+    h += '<div class="bm-trend-head"><span class="bm-trend-letter" style="background:'+t.color+'">'+t.letter+'</span>';
+    h += '<span class="bm-trend-title">'+_L(t.title)+'</span></div>';
+    h += '<div class="bm-trend-problem"><span class="bm-trend-problem-label">'+(currentLang==='es'?'Resuelve':'Resolve')+'</span>'+_L(t.problem)+'</div>';
+    h += '<p class="bm-trend-text">'+_L(t.text)+'</p>';
+    h += '</div>';
+  });
+  h += '</div>';
+  return h;
+}
+
+// ── BENCHMARK: render conclusão (tópico 8) ──
+function renderConclusao(){
+  var h = '<p class="bm-concl-intro">'+_L(BM_CONCLUSAO.intro)+'</p>';
+  h += '<div class="bm-moves">';
+  BM_CONCLUSAO.moves.forEach(function(m){
+    h += '<div class="bm-move" style="border-left-color:'+m.color+'">';
+    h += '<div class="bm-move-n" style="color:'+m.color+'">'+m.n+'</div>';
+    h += '<div class="bm-move-body"><div class="bm-move-title">'+_L(m.title)+'</div>';
+    h += '<p class="bm-move-text">'+_L(m.text)+'</p></div></div>';
+  });
+  h += '</div>';
+  h += '<div class="bm-synthesis"><span class="bm-synthesis-label">'+(currentLang==='es'?'Síntesis':'Síntese')+'</span>'+_L(BM_CONCLUSAO.synthesis)+'</div>';
+  return h;
+}
+
+// ── BENCHMARK main builder ──
+function buildBenchmark(){
+  var el = document.getElementById('benchmark-content');
+  if(!el) return;
+  var t = i18n[currentLang];
+  var h = '';
+  // Section 3 — Clusters
+  h += '<div class="bm-section">';
+  h += '<div class="bm-section-eyebrow">'+(currentLang==='es'?'Mapa del mercado':'Mapa do mercado')+'</div>';
+  h += '<div class="bm-section-title">'+(currentLang==='es'?'Clusters de identidad y valor':'Clusters de identidade e valor')+'</div>';
+  h += '<p class="bm-section-lead">'+(currentLang==='es'?'Segmentamos el mercado en cuatro verticales. Cada cluster posee una "moneda de cambio" diferente con la escuela: currículo, engagement, infraestructura o impacto social.':'Segmentamos o mercado em quatro verticais. Cada cluster possui uma "moeda de troca" diferente com a escola: currículo, engajamento, infraestrutura ou impacto social.')+'</p>';
+  h += '<div class="bm-clusters">'+renderClusters()+'</div>';
+  h += '</div>';
+  // Section 4 — SWOT cruzada
+  h += '<div class="bm-section">';
+  h += '<div class="bm-section-eyebrow">'+(currentLang==='es'?'Análisis estratégico':'Análise estratégica')+'</div>';
+  h += '<div class="bm-section-title">'+(currentLang==='es'?'SWOT cruzada: el choque de modelos':'SWOT cruzada: o choque de modelos')+'</div>';
+  h += '<p class="bm-section-lead">'+(currentLang==='es'?'En un escenario de competencia asimétrica, la "solidez pedagógica" de un modelo se transforma en "rigidez obsoleta" frente a la agilidad del otro. La matriz revela las brechas donde un modelo híbrido puede capturar valor hoy desperdiciado.':'Num cenário de competição assimétrica, a "solidez pedagógica" de um modelo se transforma em "rigidez obsoleta" diante da agilidade do outro. A matriz revela as brechas onde um modelo híbrido pode capturar valor hoje desperdiçado.')+'</p>';
+  h += renderSwotCruzada();
+  h += '</div>';
+  // Section 7 — Tendências
+  h += '<div class="bm-section">';
+  h += '<div class="bm-section-eyebrow">'+(currentLang==='es'?'Horizontes de oportunidad':'Horizontes de oportunidade')+'</div>';
+  h += '<div class="bm-section-title">'+(currentLang==='es'?'Seis tendencias estratégicas':'Seis tendências estratégicas')+'</div>';
+  h += '<p class="bm-section-lead">'+(currentLang==='es'?'El futuro pertenece a soluciones que dejen de competir contra las barreras del mercado y pasen a trabajar con ellas.':'O futuro pertence a soluções que parem de competir contra as barreiras do mercado e passem a trabalhar com elas.')+'</p>';
+  h += renderTendencias();
+  h += '</div>';
+  // Section 8 — Conclusão
+  h += '<div class="bm-section">';
+  h += '<div class="bm-section-eyebrow">'+(currentLang==='es'?'Conclusión':'Conclusão')+'</div>';
+  h += '<div class="bm-section-title">'+(currentLang==='es'?'Caminos para la madurez del sector':'Caminhos para a maturidade do setor')+'</div>';
+  h += renderConclusao();
+  h += '</div>';
+  el.innerHTML = h;
+}
+
+// ════════════════════════════════════════════════════════════
+// OVERVIEW EXTRA builder
+// ════════════════════════════════════════════════════════════
+function buildOverviewExtra(){
+  var el = document.getElementById('overview-extra-content');
+  if(!el) return;
+  var h = '';
+
+  // ── Topic 1: Contexto ──
+  h += '<div class="ov-x-section">';
+  h += '<div class="divider-page" style="margin-top:8px"></div>';
+  h += '<div class="page-eyebrow">'+_L(OV_CONTEXTO.eyebrow)+'</div>';
+  h += '<div class="ov-x-title">'+_L(OV_CONTEXTO.title)+'</div>';
+  h += '<p class="ov-x-lead">'+_L(OV_CONTEXTO.lead)+'</p>';
+  h += '<div class="ov-stats3">';
+  OV_CONTEXTO.stats.forEach(function(s){
+    h += '<div class="ov-stat-card" style="border-top-color:'+s.color+'">';
+    h += '<div class="ov-stat-n" style="color:'+s.color+'">'+s.n+'</div>';
+    h += '<div class="ov-stat-l">'+_L(s.l)+'</div>';
+    h += '<div class="ov-stat-src">'+_L(s.src)+'</div></div>';
+  });
+  h += '</div>';
+  h += '<p class="ov-x-close">'+_L(OV_CONTEXTO.close)+'</p>';
+  h += '</div>';
+
+  // ── Topic 2: TAM/SAM/SOM ──
+  h += '<div class="ov-x-section">';
+  h += '<div class="divider-page" style="margin-top:8px"></div>';
+  h += '<div class="page-eyebrow">'+_L(OV_MARKET.eyebrow)+'</div>';
+  h += '<div class="ov-x-title">'+_L(OV_MARKET.title)+'</div>';
+  h += '<p class="ov-x-lead">'+_L(OV_MARKET.lead)+'</p>';
+  h += '<div class="ov-funnel">';
+  OV_MARKET.funnel.forEach(function(f,i){
+    h += '<div class="ov-funnel-tier" style="background:'+f.color+'">';
+    h += '<div class="ov-funnel-tag">'+f.tier+'</div>';
+    h += '<div class="ov-funnel-name">'+_L(f.name)+'</div>';
+    h += '<div class="ov-funnel-big">'+f.big+'</div>';
+    h += '<div class="ov-funnel-unit">'+_L(f.unit)+'</div>';
+    h += '<div class="ov-funnel-sub">'+f.sub+' · '+_L(f.subl)+'</div>';
+    h += '<div class="ov-funnel-note">'+_L(f.note)+'</div>';
+    h += '</div>';
+    if(i<OV_MARKET.funnel.length-1) h += '<div class="ov-funnel-arrow">&#9660;</div>';
+  });
+  h += '</div>';
+  h += '<div class="ov-sub-label">'+(currentLang==='es'?'El SOM dividido por comportamiento de compra':'O SOM dividido por comportamento de compra')+'</div>';
+  h += '<div class="ov-submarkets">';
+  OV_MARKET.submarkets.forEach(function(s){
+    h += '<div class="ov-submarket" style="border-top-color:'+s.color+'">';
+    h += '<div class="ov-submarket-top"><span class="ov-submarket-pct" style="color:'+s.color+'">'+s.pct+'</span><span class="ov-submarket-n">'+s.n+' '+(currentLang==='es'?'escuelas':'escolas')+'</span></div>';
+    h += '<div class="ov-submarket-name">'+_L(s.name)+'</div>';
+    h += '<div class="ov-submarket-how" style="background:'+s.color+'">'+_L(s.how)+'</div>';
+    h += '<p class="ov-submarket-desc">'+_L(s.desc)+'</p>';
+    h += '<div class="ov-submarket-players">'+_L(s.players)+'</div>';
+    h += '<div class="ov-submarket-challenge"><span>'+(currentLang==='es'?'Desafío':'Desafio')+'</span>'+_L(s.challenge)+'</div>';
+    h += '</div>';
+  });
+  h += '</div></div>';
+
+  // ── Topic 5: Perfis ──
+  h += '<div class="ov-x-section">';
+  h += '<div class="divider-page" style="margin-top:8px"></div>';
+  h += '<div class="page-eyebrow">'+_L(OV_PERFIS.eyebrow)+'</div>';
+  h += '<div class="ov-x-title">'+_L(OV_PERFIS.title)+'</div>';
+  h += '<p class="ov-x-lead">'+_L(OV_PERFIS.lead)+'</p>';
+  h += '<div class="ov-profiles">';
+  OV_PERFIS.profiles.forEach(function(p){
+    h += '<div class="ov-profile" style="border-top-color:'+p.color+'">';
+    h += '<div class="ov-profile-n" style="background:'+p.color+'">'+p.n+'</div>';
+    h += '<div class="ov-profile-name">'+_L(p.name)+'</div>';
+    h += '<div class="ov-profile-persona" style="color:'+p.color+'">'+_L(p.persona)+'</div>';
+    h += '<p class="ov-profile-scenario">'+_L(p.scenario)+'</p>';
+    h += '<div class="ov-profile-driver"><span>'+(currentLang==='es'?'Driver de decisión':'Driver de decisão')+'</span>'+_L(p.driver)+'</div>';
+    h += '<p class="ov-profile-buy">'+_L(p.buy)+'</p>';
+    h += '<div class="ov-profile-fit-label">'+(currentLang==='es'?'Alta adherencia':'Alta aderência')+'</div>';
+    h += '<div class="ov-profile-fit">';
+    p.fit.forEach(function(f){ h += '<span class="ov-fit-badge" style="border-color:'+p.color+';color:'+p.color+'">'+f+'</span>'; });
+    h += '</div></div>';
+  });
+  h += '</div></div>';
+
+  // ── Topic 6: Dores ──
+  h += '<div class="ov-x-section">';
+  h += '<div class="divider-page" style="margin-top:8px"></div>';
+  h += '<div class="page-eyebrow">'+_L(OV_DORES.eyebrow)+'</div>';
+  h += '<div class="ov-x-title">'+_L(OV_DORES.title)+'</div>';
+  h += '<p class="ov-x-lead">'+_L(OV_DORES.lead)+'</p>';
+  h += '<div class="ov-pains">';
+  OV_DORES.pains.forEach(function(p){
+    h += '<div class="ov-pain">';
+    h += '<div class="ov-pain-n" style="color:'+p.color+'">'+p.n+'</div>';
+    h += '<div class="ov-pain-body"><div class="ov-pain-title" style="color:'+p.color+'">'+_L(p.title)+'</div>';
+    h += '<p class="ov-pain-text">'+_L(p.text)+'</p></div></div>';
+  });
+  h += '</div></div>';
+
+  el.innerHTML = h;
+}
+
 
 
 // ── PYRAMID DATA ──
@@ -2974,6 +3647,24 @@ Object.assign(i18n.es, {
   report_link_label: 'Parte 1 — Benchmark general del mercado de Educación Financiera',
   report_text3: 'La segunda parte está relatada en esta presentación, resultado de un proceso en el que se seleccionaron 8 empresas latinoamericanas de Educación Financiera, analizadas según criterios pedagógicos, comerciales y estructurales con el objetivo de elegir posibles socios comerciales para Santillana en esta área.'
 });
+
+Object.assign(i18n.pt, {
+  tab_benchmark: 'Benchmark geral',
+  bm_eyebrow: 'Benchmark de mercado \u00B7 Fase 1',
+  bm_title: 'Panorama competitivo da<br>educa\u00E7\u00E3o financeira no Brasil',
+  bm_subtitle: 'Mapa dos players, choque de modelos de neg\u00F3cio e horizontes de oportunidade no mercado K-12.'
+});
+Object.assign(i18n.es, {
+  tab_benchmark: 'Benchmark general',
+  bm_eyebrow: 'Benchmark de mercado \u00B7 Fase 1',
+  bm_title: 'Panorama competitivo de la<br>educaci\u00F3n financiera en Brasil',
+  bm_subtitle: 'Mapa de los players, choque de modelos de negocio y horizontes de oportunidad en el mercado K-12.'
+});
+
+
+// init new sections
+try { buildOverviewExtra(); } catch(e){}
+try { if(document.getElementById('page-10') && document.getElementById('page-10').classList.contains('active')) buildBenchmark(); } catch(e){}
 </script>
 </body>
 </html>
